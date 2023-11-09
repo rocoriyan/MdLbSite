@@ -1,0 +1,86 @@
+html{
+    padding:0px;
+    background-color: rgb(106, 127, 191);
+    background-image: linear-gradient(to bottom, rgb(106, 127, 191), rgb(100, 86, 168));
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#222211;
+    padding-left:0px;
+    padding-right:0px;
+    font-size:14pt;
+}
+
+.head{
+    padding:10px;
+}
+
+.yoshi-image{
+    grid-column: 1 / span 4;
+    width:50px;
+}
+
+#burple-logo{
+    float: left;
+    height: 95px;
+    /*object-fit:content;*/
+}
+
+.about{
+    grid-column:1 / span 8;
+}
+
+.burple-image{
+    grid-column:10 / span 2;
+    width:100px;
+}
+
+
+.art{
+    grid-column: 5 / span 12;
+}
+
+
+.nav > ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#252e69;
+}
+
+.nav > ul > li{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav >ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container{
+    display:grid;
+    gap:10px;
+    grid-template-columns: repeat(12,1fr);
+}
+
+@media only screen and (max-width:768px){
+    /*grid 4 tablet*/
+}
+
+@media only screen and (max-width:600px){
+    /*grid 4 fone*/
+}
+
+#photos {
+    max-width:min-content;
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+}

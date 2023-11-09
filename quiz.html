@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>get quizzed idiot</title>
+        <style>
+            body{
+                background-image:linear-gradient(to right, rgba(255,255,255, 0.6) 0 100%), url("https://images.unsplash.com/photo-1520990269335-9271441e202f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZpc2glMjBjbGlwYXJ0fGVufDB8fDB8fHww");
+                background-repeat: repeat;
+                background-size:150px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color:#222211;
+                padding-left:0px;
+                padding-right:0px;
+                font-size:14pt;
+            }
+            .nav > ul{
+            list-style-type: none;
+            overflow: hidden;
+            background-color:#252e69;
+            }
+
+            .nav > ul > li{
+                float: right;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .nav >ul > li > a{
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <nav class="nav">
+            <ul>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <main>
+            <marquee scrollamount="10">
+                <h1>welcome to my quiz! welcome to my quiz! welcome to my quiz! welcome to my quiz!</h1>
+            </marquee>
+            <img height=100px src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.clipartlook.com%2Fcolours-clipart--1920.jpg&f=1&nofb=1&ipt=4efac5accc897453072a61c3035be4a8e1b8cc67428c9f04cf6b819b7932ebe3&ipo=images">
+            <img height=100px src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages%2Fpc7rbpAni.jpg&f=1&nofb=1&ipt=7b725d34168cca82bf567279e4a5c39379c2717d7e1e27b04b8b216508827320&ipo=images">
+            <img height=100px src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipartix.com%2Fwp-content%2Fuploads%2F2016%2F04%2FMusical-notes-single-music-notes-clip-art-free-clipart-images-3.jpg&f=1&nofb=1&ipt=78a332dc859b98fe595883da4ea3a569de70baad259ece254f6ef63c237aaccd&ipo=images">
+            <img height=100px src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipartmag.com%2Fimages%2Fhobbies-clipart-43.png&f=1&nofb=1&ipt=436baaae8cecf803851da7e3617c942b57e2f57531e84b2dd85b0a7727459631&ipo=images">
+            <section>
+                <form name="quiz">
+                    <fieldset>
+                        <legend>What is your favourite colour?!</legend>
+
+                        <input type="radio" name="colour" value="pink" id="pink">
+                        <label for="pink">Pink</label>
+
+                        <input type="radio" name="colour" value="yellow" id="yellow">
+                        <label for="yellow">Yellow</label>
+
+                        <input type="radio" name="colour" value="green" id="green">
+                        <label for="green">Green</label>
+                        
+                        <input type="radio" name="colour" value="black" id="black">
+                        <label for="black">Black</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is your favourite ANIMAL?!</legend>
+
+                        <input type="radio" name="animal" value="red-panda" id="red-panda">
+                        <label for="red-panda">Red Panda</label>
+
+                        <input type="radio" name="animal" value="giraffe" id="giraffe">
+                        <label for="giraffe">Giraffe</label>
+
+                        <input type="radio" name="animal" value="jaguar" id="jaguar">
+                        <label for="jaguar">Jaguar</label>
+                        
+                        <input type="radio" name="animal" value="gorilla" id="gorilla">
+                        <label for="gorilla">Gorilla</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is your favourite music genre?!</legend>
+
+                        <input type="radio" name="music" value="jungle" id="jungle">
+                        <label for="jungle">Jungle</label>
+
+                        <input type="radio" name="music" value="nightcore" id="nightcore">
+                        <label for="nightcore">Nightcore</label>
+
+                        <input type="radio" name="music" value="weird-core" id="weird-core">
+                        <label for="weird-core">Weird-core</label>
+                        
+                        <input type="radio" name="music" value="rock" id="rock">
+                        <label for="rock">Rock</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is your favourite thing to do in your spare time?!</legend>
+
+                        <input type="radio" name="hobby" value="eat" id="eat">
+                        <label for="eat">Eat</label>
+
+                        <input type="radio" name="hobby" value="sleep" id="sleep">
+                        <label for="sleep">Sleep</label>
+
+                        <input type="radio" name="hobby" value="game" id="game">
+                        <label for="game">Game</label>
+                        
+                        <input type="radio" name="hobby" value="quizzes" id="quizzes">
+                        <label for="quizzes">Do quizzes!!!!!</label>
+                    </fieldset>
+                    <br>
+                    <button type="button" onclick="checkAnswers()">SUBMIT</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
